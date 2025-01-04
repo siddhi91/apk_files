@@ -1,0 +1,13 @@
+{
+    "build": {
+      "android": {
+        "development": {
+          "workflow": "managed"
+        },
+        "production": {
+          "workflow": "managed"
+        }
+      }
+    }
+  }
+  

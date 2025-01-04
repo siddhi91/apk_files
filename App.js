@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './screens/Homescreen';
+import DetailsScreen from './screens/Detailsscreen';
+import FavoritesScreen from './screens/Favoritesscreen';
+import { FavoritesProvider } from './context/Favoritescontext';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Stack = createStackNavigator();
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => (
+  <FavoritesProvider>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen 
+          name="Home" 
+          component={HomeScreen} 
+          options={{ headerShown: false }} 
+        />
+        <Stack.Screen 
+          name="Details" 
+          component={DetailsScreen} 
+        />
+        <Stack.Screen 
+          name="Favorites" 
+          component={FavoritesScreen} 
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  </FavoritesProvider>
+);
+
+export default App;
