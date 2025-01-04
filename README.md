@@ -25,10 +25,10 @@ Before running the app locally, ensure that you have the following tools install
    git clone https://github.com/siddhi91/github-explorer.git
    cd github-explorer
    
-2.Install Dependencies: Install the required dependencies by running the following command:
+2. Install Dependencies: Install the required dependencies by running the following command:
       npm install
     
-3.Run the App:
+3. Run the App:
       
     - For iOS (using Xcode):
        npx react-native run-ios
@@ -36,20 +36,20 @@ Before running the app locally, ensure that you have the following tools install
     - For Android (using Android Studio):
        npx react-native run-android
         
- 4. Using Expo Go App for Testing (Optional):If you want to use Expo Go for testing:
+ 4.  Using Expo Go App for Testing (Optional):If you want to use Expo Go for testing:
        - Install Expo Go on your mobile device (available on App Store or Google Play).
        - Run the app with:
           npx expo start
        - Scan the QR code using the Expo Go app to view the app on your mobile device.
     
-5. Building the APK (For Android):
-   If you want to build the APK for testing, follow these steps:
-    Download the APK.
-     [Download Universal APK](https://github.com/siddhi91/apk_files/raw/main/universal.apk)
-    Install the APK on your Android device.
+5.  Building the APK (For Android):
+      If you want to build the APK for testing, follow these steps:
+       -Download the APK.
+        [Download Universal APK](https://github.com/siddhi91/apk_files/blob/main/apk_files/universal.apk)
+       -Install the APK on your Android device.
 
-6.Contributing
+6. Contributing
    If you'd like to contribute to this project, feel free to fork the repository, make changes, and submit a pull request.
 
-7.License
+7. License
    This project is licensed under the MIT License.
