@@ -1,8 +1,13 @@
 {
-    "build": {
+  "build": {
+    "android": {
+      "distribution": "store"
+    },
+    "production": {
       "android": {
-        "workflow": "managed"
+        "distribution": "store",
+        "buildType": "app-bundle"  
       }
     }
   }
-  
+}
