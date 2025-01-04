@@ -22,9 +22,9 @@ Before running the app locally, ensure that you have the following tools install
 
 1. Clone the Repository:
    First, clone this repository to your local machine using Git.
-   git clone https://github.com/siddhi91/github-explorer.git
-   cd github-explorer
-   
+      git clone https://github.com/siddhi91/github-explorer.git
+      cd github-explorer
+      
 2. Install Dependencies: Install the required dependencies by running the following command:
       npm install
     
